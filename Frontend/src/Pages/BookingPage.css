@@ -1,0 +1,23 @@
+/* src/Pages/BookingPage.css */
+
+.booking-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .booking-date {
+    margin: 20px 0;
+  }
+  
+  .book-now-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #45a049;
+  }
+  

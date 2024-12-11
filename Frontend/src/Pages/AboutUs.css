@@ -1,0 +1,80 @@
+/* src/pages/AboutUs.css */
+
+.about-us-container {
+    background-image: url('../assets/images/about-us-background.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+  }
+  
+  .about-us-content {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-us-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+  
+  .about-us-content p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-frame {
+    border: 4px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-frame:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  /* Optional: Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .image-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .about-us-content h1 {
+      font-size: 40px;
+    }
+  
+    .about-us-content p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
